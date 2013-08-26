@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncMSMQ", "AsyncMSMQ\AsyncMSMQ.csproj", "{80C1FFB0-9DFF-466A-880B-472C57FAD6FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample", "Sample\Sample.csproj", "{BA0AAD24-1101-4D43-98C9-27B5F5814AFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80C1FFB0-9DFF-466A-880B-472C57FAD6FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80C1FFB0-9DFF-466A-880B-472C57FAD6FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80C1FFB0-9DFF-466A-880B-472C57FAD6FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80C1FFB0-9DFF-466A-880B-472C57FAD6FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA0AAD24-1101-4D43-98C9-27B5F5814AFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA0AAD24-1101-4D43-98C9-27B5F5814AFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA0AAD24-1101-4D43-98C9-27B5F5814AFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA0AAD24-1101-4D43-98C9-27B5F5814AFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

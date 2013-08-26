@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Erik Zetterqvist</authors>
+    <owners>$author$</owners>
+    <projectUrl>https://github.com/erizet/AsyncMSMQ</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A simple asynchronous MSMQ client.</description>
+    <releaseNotes>First version.</releaseNotes>
+    <copyright>Copyright 2013</copyright>
+    <tags>MSMQ Async</tags>
+  </metadata>
+</package>
