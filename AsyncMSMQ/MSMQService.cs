@@ -233,7 +233,7 @@ namespace AsyncMSMQ
             }
             catch (InvalidOperationException e)
             {
-                throw new InvalidOperationException("createIfNotExists cannot be used on private queues or multicast addresses.")
+                throw new InvalidOperationException("createIfNotExists cannot be used on private queues or multicast addresses.");
             }
             catch (Exception ex)
             {
