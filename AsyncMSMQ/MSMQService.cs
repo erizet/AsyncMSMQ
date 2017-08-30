@@ -231,6 +231,10 @@ namespace AsyncMSMQ
                     MessageQueue.Create(MessageQueuePath);
                 }
             }
+            catch (InvalidOperationException e)
+            {
+                throw new InvalidOperationException("createIfNotExists cannot be used on private queues or multicast addresses.")
+            }
             catch (Exception ex)
             {
                 _log.Error(ex.Message);
