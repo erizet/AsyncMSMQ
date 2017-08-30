@@ -14,19 +14,19 @@ namespace AsyncMSMQ
     {
         private ILogListener _log;
         public string MessageQueuePath { get; private set; }
-        
+
         public MSMQService(string queuePath, bool createIfNotExists, ILogListener logListener)
         {
             if (logListener == null) throw new ArgumentNullException("LogListener cannot be null");
 
             _log = logListener;
             MessageQueuePath = queuePath;
-            CreateQueue(createIfNotExists);
+            if (createIfNotExists) CreateQueueIfNotExists();
         }
 
 
         /// <summary>
-        /// Asynchronous receive messages from specified MessageQueue 
+        /// Asynchronous receive messages from specified MessageQueue
         /// </summary>
         /// <typeparam name="T">Body stream is of type T</typeparam>
         /// <returns>Object of type T</returns>
@@ -47,7 +47,7 @@ namespace AsyncMSMQ
 
 
         /// <summary>
-        /// Asynchronous receive messages from specified MessageQueue 
+        /// Asynchronous receive messages from specified MessageQueue
         /// </summary>
         /// <typeparam name="T">Body stream is of type T</typeparam>
         /// <returns>Object of type T</returns>
@@ -222,7 +222,7 @@ namespace AsyncMSMQ
             });
         }
 
-        private void CreateQueue(bool createIfNotExists)
+        private void CreateQueueIfNotExists()
         {
             try
             {
